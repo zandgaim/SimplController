@@ -1,0 +1,5 @@
+defmodule WwwWeb.PageHTML do
+  use WwwWeb, :html
+
+  embed_templates "page_html/*"
+end
