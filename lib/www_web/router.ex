@@ -8,6 +8,7 @@ defmodule WwwWeb.Router do
     plug :put_root_layout, html: {WwwWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug WwwWeb.Plugs.Device, "en"
   end
 
   pipeline :api do

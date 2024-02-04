@@ -7,6 +7,7 @@ defmodule WwwWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_www_key",
+    secure: true,
     signing_salt: "DmeeUqn2",
     same_site: "Lax"
   ]
